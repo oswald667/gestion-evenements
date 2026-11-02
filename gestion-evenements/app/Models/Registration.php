@@ -2,11 +2,34 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-protected $fillable = ['event_id', 'user_name', 'user_email'];
-
-public function event()
+class Registration extends Model
 {
-    return $this->belongsTo(Event::class);
+    use HasFactory;
+
+    protected $fillable = [
+        'event_id',
+        'full_name',
+        'email',
+        'phone',
+        'status',
+    ];
+
+    /**
+     * Relation avec l'événement
+     */
+    public function event()
+    {
+        return $this->belongsTo(Event::class);
+    }
+
+    /**
+     * Scope pour les inscriptions actives
+     */
+    public function scopeActive($query)
+    {
+        return $query->where('status', 'active');
+    }
 }

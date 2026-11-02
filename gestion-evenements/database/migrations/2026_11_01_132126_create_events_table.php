@@ -14,14 +14,7 @@ return new class extends Migration
             $table->text('description');
             $table->dateTime('event_date');
             $table->string('location');
-            $table->enum('category', [
-                'Conférence',
-                'Concert',
-                'Sport',
-                'Atelier',
-                'Exposition',
-                'Autre'
-            ]);
+            $table->string('category', 50); // Conférence, Concert, Sport, Atelier, Exposition, Autre
             $table->unsignedInteger('total_places');
             $table->unsignedInteger('available_places');
             $table->string('image')->nullable();
