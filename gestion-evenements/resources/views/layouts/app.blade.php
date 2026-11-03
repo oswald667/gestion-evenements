@@ -76,12 +76,9 @@
                 <div class="w-9 h-9 rounded-xl flex items-center justify-center bg-indigo-600 group-hover:bg-indigo-700 transition-colors shadow-sm text-white">
                     <i class="fa-solid fa-calendar-check text-base"></i>
                 </div>
-                <div class="flex flex-col">
-                    <span class="text-lg font-bold text-gray-900 tracking-tight leading-none">
-                        Event<span class="text-indigo-600">Hub</span>
-                    </span>
-                    <span class="text-[10px] text-gray-400 font-medium">Bénin • GL3 IFRI</span>
-                </div>
+                <span class="text-lg font-bold text-gray-900 tracking-tight leading-none">
+                    Event<span class="text-indigo-600">Hub</span>
+                </span>
             </a>
 
             {{-- Barre de recherche globale (desktop) --}}
@@ -215,14 +212,9 @@
                 <div>
                     <span class="text-sm font-bold text-gray-800">Event<span class="text-indigo-600">Hub</span></span>
                     <span class="text-xs text-gray-400 block sm:inline sm:ml-2">
-                        &copy; {{ date('Y') }} Projet IFRI-UAC - Sujet B (Équipe 14)
+                        &copy; {{ date('Y') }} EventHub. Tous droits réservés.
                     </span>
                 </div>
-            </div>
-
-            <div class="text-xs text-gray-500 text-center md:text-right">
-                <p class="font-medium text-gray-700">Membres de l'équipe : Roberto TALEHOU • Dieudonné ADOH • Sènakpon Osvald Eléazar AKLOBO</p>
-                <p class="text-gray-400 mt-1">GL3 • Projet d'initiation aux frameworks (Laravel & MySQL)</p>
             </div>
 
         </div>
